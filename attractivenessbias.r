@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "c528342b",
+   "id": "fdefa945",
    "metadata": {
     "_execution_state": "idle",
     "_uuid": "051d70d956493feee0c6d64651c6a088724dca2a",
     "execution": {
-     "iopub.execute_input": "2024-02-24T02:33:43.749156Z",
-     "iopub.status.busy": "2024-02-24T02:33:43.747316Z",
-     "iopub.status.idle": "2024-02-24T02:33:44.813060Z",
-     "shell.execute_reply": "2024-02-24T02:33:44.811683Z"
+     "iopub.execute_input": "2024-02-24T02:40:10.844856Z",
+     "iopub.status.busy": "2024-02-24T02:40:10.842593Z",
+     "iopub.status.idle": "2024-02-24T02:40:12.131736Z",
+     "shell.execute_reply": "2024-02-24T02:40:12.129735Z"
     },
     "papermill": {
-     "duration": 1.071673,
-     "end_time": "2024-02-24T02:33:44.815186",
+     "duration": 1.297098,
+     "end_time": "2024-02-24T02:40:12.134756",
      "exception": false,
-     "start_time": "2024-02-24T02:33:43.743513",
+     "start_time": "2024-02-24T02:40:10.837658",
      "status": "completed"
     },
     "tags": []
@@ -71,19 +71,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "9568b342",
+   "id": "62f4964e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-02-24T02:33:44.843395Z",
-     "iopub.status.busy": "2024-02-24T02:33:44.820225Z",
-     "iopub.status.idle": "2024-02-24T02:34:24.192489Z",
-     "shell.execute_reply": "2024-02-24T02:34:24.191079Z"
+     "iopub.execute_input": "2024-02-24T02:40:12.177407Z",
+     "iopub.status.busy": "2024-02-24T02:40:12.142356Z",
+     "iopub.status.idle": "2024-02-24T02:41:16.897730Z",
+     "shell.execute_reply": "2024-02-24T02:41:16.895782Z"
     },
     "papermill": {
-     "duration": 39.379945,
-     "end_time": "2024-02-24T02:34:24.196833",
+     "duration": 64.763547,
+     "end_time": "2024-02-24T02:41:16.901165",
      "exception": false,
-     "start_time": "2024-02-24T02:33:44.816888",
+     "start_time": "2024-02-24T02:40:12.137618",
      "status": "completed"
     },
     "tags": []
@@ -184,6 +184,69 @@
     "               PerformanceAnalytics,rcompanion)\n",
     "options(dplyr.summarise.inform = FALSE)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c8da58a6",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-02-24T02:41:16.916104Z",
+     "iopub.status.busy": "2024-02-24T02:41:16.914326Z",
+     "iopub.status.idle": "2024-02-24T02:41:17.001116Z",
+     "shell.execute_reply": "2024-02-24T02:41:16.999169Z"
+    },
+    "papermill": {
+     "duration": 0.097174,
+     "end_time": "2024-02-24T02:41:17.004001",
+     "exception": false,
+     "start_time": "2024-02-24T02:41:16.906827",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "library(data.table)\n",
+    "library(sandwich)\n",
+    "library(lmtest)\n",
+    "library(knitr)\n",
+    "library(stargazer)\n",
+    "library(randomizr)\n",
+    "library(foreign)\n",
+    "library(ggplot2)\n",
+    "#library(AER)\n",
+    "library(\"readxl\")\n",
+    "library(DiagrammeR)\n",
+    "#library(Gmisc, quietly = TRUE)\n",
+    "library(glue)\n",
+    "#library(htmlTable)\n",
+    "library(grid)\n",
+    "library(magrittr)\n",
+    "library(cobalt)\n",
+    "library(MatchIt)\n",
+    "#library(Hmisc)\n",
+    "library(corrplot)\n",
+    "library(PerformanceAnalytics)\n",
+    "#library(rcompanion)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "11654436",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005437,
+     "end_time": "2024-02-24T02:41:17.014912",
+     "exception": false,
+     "start_time": "2024-02-24T02:41:17.009475",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
@@ -211,14 +274,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 43.805571,
-   "end_time": "2024-02-24T02:34:24.322296",
+   "duration": 70.079786,
+   "end_time": "2024-02-24T02:41:17.142330",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-02-24T02:33:40.516725",
+   "start_time": "2024-02-24T02:40:07.062544",
    "version": "2.5.0"
   }
  },
